@@ -38,31 +38,43 @@ Repository Layer: Manages database operations for storing and retrieving URL rec
 
 Frontend: Thymeleaf templates to create a clean and simple user interface for URL input and result display.
 
-How It Works
+Setup Instructions
 
-Input Long URL: The user enters a long URL into the input field on the main page.
+Prerequisites
 
-Shorten URL: When the user submits, the backend processes the request and generates a unique shortened version of the URL.
+Java 17 or later
 
-Store URLs: The original and shortened URLs are stored in the H2 database.
+Maven for building the project
 
-Redirect on Access: When a user visits the shortened URL, they are redirected to the original URL.
+Steps to Run the Project
 
-Running the Project
+Clone the Repository
 
-Clone the Repository: Clone the repository from GitHub.
+Clone the repository from GitHub using:
 
-Set Up Dependencies: Ensure Java 17 and Maven are installed. Run mvn clean install to set up the dependencies.
+git clone <repository-url>
 
-Run the Application: Use your IDE or mvn spring-boot:run to start the server.
+Set Up Dependencies
 
-Access the Application: Open your browser and navigate to http://localhost:8080.
+Navigate to the project directory and run:
+
+mvn clean install
+
+This will download all necessary dependencies.
+
+Run the Application
+
+Start the application using your IDE or run:
+
+mvn spring-boot:run
+
+The application will be accessible at http://localhost:8080.
 
 Example Usage
 
-Enter Long URL: Enter a long URL, such as https://example.com/some/long/path, in the input field.
+Enter Long URL: Open the browser and navigate to http://localhost:8080. Enter a long URL, such as https://example.com/some/long/path, in the input field.
 
-Generate Shortened URL: Click the Shorten URL button to generate a link, like http://localhost:8080/abc123.
+Generate Shortened URL: Click the Shorten URL button to generate a shortened link, like http://localhost:8080/abc123.
 
 Access Original URL: When visiting the shortened URL, the application will redirect you to the original long URL.
 
