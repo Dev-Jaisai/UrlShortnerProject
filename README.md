@@ -69,3 +69,7 @@ Access Original URL: When visiting the shortened URL, the application will redir
 Contributing
 
 Feel free to fork the repository and submit pull requests for any improvements or bug fixes.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
